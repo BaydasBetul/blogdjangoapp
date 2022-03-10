@@ -1,4 +1,4 @@
-from msilib.schema import ListView
+#from msilib.schema import ListView
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .models import BlogPost, Comment
@@ -41,6 +41,7 @@ class PostDetailView(HitCountDetailView):
     template_name = 'blog/blog_detail.html'
     context_object_name = 'blog'
     count_hit = True
+
 
 class PostUpdateView(UpdateView):
     model = BlogPost
