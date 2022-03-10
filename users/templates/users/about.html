@@ -1,0 +1,24 @@
+{% extends 'users/base.html' %}
+{% load static %} 
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-8">
+        <img class='w-100' src="{% static 'users/images/1.jpg' %}" alt="..." />
+      </div>
+      <div class="col-4">
+        <div>
+          <img class='w-100' src="{% static 'users/images/2.jpg' %}" alt="..." />
+        </div>
+        <div>
+          <img class='w-100' src="{% static 'users/images/3.jpg' %}" alt="..." />
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis earum tempora modi perspiciatis quae aspernatur eum libero ab repellat sed dolorem et ducimus doloremque, dolore nesciunt perferendis quo incidunt deserunt!</p>
+        <center class='mt-5'>
+        <a href=" {% url 'register' %}" class="btn btn-outline-dark btn-lg">Join Us</a>
+        <a href="{% url 'newblog' %}" class="btn btn-dark ml-2 btn-lg">Create Blog</a></div>
+        {% comment %} {% url 'newblog' %} {% endcomment %}
+      </center>
+    </div>
+  </div>
+  {% endblock content %}
