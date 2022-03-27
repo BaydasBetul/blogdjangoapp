@@ -5,8 +5,8 @@
 <hr class='bg-dark' />
 <div class="content-section pt-2">
   <div class="media">
-    <img class="rounded-circle w-20" src="{{user.profile.image.url}}">
-    <div class="media-body m-3">
+    <img class="rounded-circle" style='width:200px' src="{{user.profile.image.url}}">
+    <div class="media-body m-1">
       <h4>{{user.username}}</h2>
       <p>{{user.email}}</p>
       <p>{{user.profile.bio}}</p>
@@ -14,7 +14,7 @@
       <form action="" method="post" enctype="multipart/form-data">
         {% csrf_token %} 
         {{ u_form | crispy }} {{ p_form | crispy }}
-        <button type="submit" class="btn btn-secondary mt-4">Update</button>
+        <button type="submit" class="btn btn-warning mt-4">Update</button>
       </form>
     </div>
   </div>

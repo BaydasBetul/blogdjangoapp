@@ -45,7 +45,7 @@ class PostDetailView(HitCountDetailView):
 
 class PostUpdateView(UpdateView):
     model = BlogPost
-    form_class = BlogPostForm
+    #form_class = BlogPostForm
     template_name = 'blog/post_update.html'
     fields = ['title', 'slug', 'content', 'image']
     success_url = reverse_lazy('list')

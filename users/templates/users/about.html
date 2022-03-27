@@ -2,23 +2,30 @@
 {% load static %} 
 {% block content %}
 <div class="container mt-5">
+  <p class='h3'>About Us</p>
+  <hr class='hr1'>
+  <br>
     <div class="row">
       <div class="col-8">
-        <img class='w-100' src="{% static 'users/images/1.jpg' %}" alt="..." />
+        <img class='w-100 mb-3' style="border:3px solid black;" src="{% static 'users/images/travel.jpg' %}" alt="..." />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis earum tempora modi perspiciatis quae aspernatur eum libero ab repellat sed dolorem et ducimus doloremque, dolore nesciunt perferendis quo incidunt deserunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cumque quibusdam vitae eligendi ipsam at nulla, porro nesciunt, odit quam necessitatibus! Velit corrupti ea nostrum, laborum tenetur illum! Distinctio tenetur omnis tempora provident blanditiis mollitia ratione perferendis aliquam! Doloremque blanditiis inventore voluptates fugiat excepturi iure quod quasi repellat eum enim.</p>
       </div>
       <div class="col-4">
         <div>
-          <img class='w-100' src="{% static 'users/images/2.jpg' %}" alt="..." />
+          <img class='w-100 mb-2' style="border:3px solid black;" src="{% static 'users/images/beauty.jpg' %}" alt="..." />
         </div>
         <div>
-          <img class='w-100' src="{% static 'users/images/3.jpg' %}" alt="..." />
+          <img class='w-100 mb-2' style="border:3px solid black;" src="{% static 'users/images/sport.jpg' %}" alt="..." />
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis earum tempora modi perspiciatis quae aspernatur eum libero ab repellat sed dolorem et ducimus doloremque, dolore nesciunt perferendis quo incidunt deserunt!</p>
-        <center class='mt-5'>
-        <a href=" {% url 'register' %}" class="btn btn-outline-dark btn-lg">Join Us</a>
-        <a href="{% url 'newblog' %}" class="btn btn-dark ml-2 btn-lg">Create Blog</a></div>
-        {% comment %} {% url 'newblog' %} {% endcomment %}
-      </center>
+        <div>
+          <img class='w-100 mb-2' style="border:3px solid black;" src="{% static 'users/images/prog.jpg' %}" alt="..." />
+        </div>
+
     </div>
+    <center class='mt-5'>
+      <a href=" {% url 'register' %}" class="btn btn-primary  ml-2 btn-lg">Join Us</a>
+      <a href="{% url 'newblog' %}" class="btn btn-success ml-2 btn-lg">Create Blog</a>
+      </center>
   </div>
   {% endblock content %}

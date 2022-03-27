@@ -30,7 +30,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'hitcount',
     'fontawesomefree',
-    'bootstrap4',
+    # 'bootstrap4',
     # my apps
     'users',
     'blog',
